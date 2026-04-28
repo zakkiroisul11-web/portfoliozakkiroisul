@@ -136,9 +136,15 @@ html, body { height: 100%; margin: 0; }
  <body class="h-full font-jakarta bg-slate-50 text-slate-800">
   <div id="app-wrapper" class="h-full w-full overflow-auto"><!-- Navbar -->
    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background:transparent;">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16"><a href="#hero" class="flex items-center gap-2 font-bold text-lg">
-      <div class="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center"><i data-lucide="graduation-cap" class="w-5 h-5" id="nav-logo-icon" style="color:white"></i>
-      </div><span id="nav-title" class="text-white">E-Portfolio</span> </a>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16"><a href="#hero" class="flex items-center gap-3 font-bold text-lg">
+  
+  <!-- Logo 1 -->
+  <img src="unipa.png"Logo 1" class="w-8 h-8 object-contain">
+
+  <!-- Judul -->
+  <span id="nav-title" class="text-white">E-Portfolio</span>
+  
+</a>
      <div class="hidden md:flex items-center gap-6 text-sm font-medium" id="nav-links-desktop"><a href="#profil" class="nav-link text-white/80 hover:text-white">Profil</a> <a href="#artefak" class="nav-link text-white/80 hover:text-white">Artefak</a> <a href="#refleksi" class="nav-link text-white/80 hover:text-white">Refleksi</a> <a href="#penilaian" class="nav-link text-white/80 hover:text-white">Penilaian</a> <a href="#model-guru" class="nav-link text-white/80 hover:text-white">Model Guru</a> <a href="#kontak" class="px-4 py-2 rounded-full text-sm font-semibold bg-white text-[#0C356A] hover:bg-blue-50 transition">Hubungi Saya</a>
      </div><button id="mobile-menu-btn" class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"> <i data-lucide="menu" class="w-6 h-6"></i> </button>
     </div>
@@ -162,6 +168,20 @@ html, body { height: 100%; margin: 0; }
      <div class="anim-fade-in delay-6 absolute bottom-12 left-1/2 -translate-x-1/2"><a href="#profil" class="flex flex-col items-center gap-1 text-white/50 hover:text-white/80 transition"> <span class="text-xs tracking-wider">Scroll</span> <i data-lucide="chevron-down" class="w-5 h-5 animate-bounce"></i> </a>
      </div>
     </div>
+    <!-- Carousel Profil 16:9 -->
+<div class="w-full max-w-4xl mx-auto mb-12 relative" id="carousel-profil">
+
+  <div class="aspect-video rounded-2xl border-4 border-white shadow-xl overflow-hidden relative">
+    
+    <!-- Track -->
+    <div class="flex transition-transform duration-700 ease-in-out" id="carousel-track-profil">
+      
+      <img src="z1.PNG">
+    </div>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/10"></div>
+
    </section><!-- Profil -->
    <section id="profil" class="py-20 px-4 sm:px-6 grid-pattern">
     <div class="max-w-5xl mx-auto" data-animate>
@@ -239,8 +259,8 @@ html, body { height: 100%; margin: 0; }
       <div class="group bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-6 card-hover border border-slate-100">
        <div class="w-12 h-12 rounded-xl bg-[#1a5fb4] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><i data-lucide="play-circle" class="w-6 h-6 text-white"></i>
        </div>
-       <h3 class="text-lg font-bold text-slate-900 mb-2">Media Pembelajaran</h3>
-       <p class="text-sm text-slate-600 leading-relaxed mb-4">Media interaktif pembelajaran yang menarik untuk meningkatkan pemahaman dan keterlibatan peserta didik.</p><a href="https://www.youtube.com/watch?v=jfrE-fT_4No&t=14s" target="_blank"
+       <h3 class="text-lg font-bold text-slate-900 mb-2">Media Video Pembelajaran</h3>
+       <p class="text-sm text-slate-600 leading-relaxed mb-4">Media interaktif dan video pembelajaran yang menarik untuk meningkatkan pemahaman dan keterlibatan peserta didik.</p><a href="https://www.youtube.com/watch?v=jfrE-fT_4No&t=14s" target="_blank"
    class="inline-flex items-center gap-1 text-[#0C356A] text-sm font-semibold group-hover:gap-2 transition-all hover:underline">
   Lihat Detail 
   <i data-lucide="arrow-right" class="w-4 h-4"></i>
